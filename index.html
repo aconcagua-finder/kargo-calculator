@@ -128,17 +128,6 @@
           <button class="cfu-btn" id="btnLead" style="width:100%;padding:16px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer">Оставить заявку</button>
           <div id="standaloneNote" style="display:none;font-size:11px;color:#9aa3b2;margin-top:8px">Форма заявки появится под калькулятором на сайте.</div>
         </div>
-
-        <details class="cfu-how" style="margin-top:14px;background:#f1f4f9;border-radius:10px;padding:0 14px">
-          <summary style="cursor:pointer;font-size:13px;font-weight:600;color:#001644;padding:12px 0">Что входит в услугу</summary>
-          <ul style="padding:0 0 14px 18px;font-size:12.5px;color:#57647f;margin:0">
-            <li style="margin-bottom:5px">Забор у поставщика и обработка на складе в Китае</li>
-            <li style="margin-bottom:5px">Доставка до СВХ в России и таможенное оформление через агента УЭО</li>
-            <li style="margin-bottom:5px">Пошлина и НДС по заниженной стоимости ИТС</li>
-            <li style="margin-bottom:5px">Страхование и доставка до вашего склада</li>
-            <li>Полный пакет документов: ДТ, инвойсы, УПД</li>
-          </ul>
-        </details>
       </div>
 
     </div>
@@ -245,7 +234,6 @@ $('btnCalc').onclick=()=>{
     $('saveDetail').textContent=fmt(r.taxBadisRUB)+' ₽ по белой схеме вместо '+fmt(r.taxInvRUB)+' ₽ при обычном импорте';
   } else { $('saveBig').style.display='none'; $('saveAlt').style.display='block'; }
   const notes=[];
-  if(r.volEstimated) notes.push('объём оценён по плотности');
   if(r.otherCity) notes.push('доставку до вашего города посчитаем в КП');
   if(r.belowMin) notes.push('партия меньше '+MIN_KG+' кг — обсудим с менеджером');
   if(notes.length){ let t=notes.join(' · '); $('resNote').textContent=t.charAt(0).toUpperCase()+t.slice(1)+'.'; $('resNote').style.display='block'; }
