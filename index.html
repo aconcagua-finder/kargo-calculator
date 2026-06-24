@@ -105,59 +105,50 @@
 
       <!-- ШАГ 4 — РЕЗУЛЬТАТ -->
       <div class="cfu-step" id="step4">
-        <div id="resultBlock">
-          <div style="text-align:center;margin-bottom:16px">
-            <div style="font-size:13px;color:#57647f;font-weight:600">Стоимость услуги «под ключ» до Москвы</div>
-            <div id="price" style="font-size:42px;font-weight:800;color:#001644;letter-spacing:-1.5px;margin:6px 0 2px">— ₽</div>
-            <div id="perkg" style="font-size:13px;color:#57647f"></div>
-          </div>
-
-          <div id="saveBig" style="display:none;background:linear-gradient(135deg,#e9f9f1,#dff5ea);border:1px solid #b7e6cd;border-radius:16px;padding:20px;text-align:center;margin-bottom:16px">
-            <div style="font-size:12px;color:#0f7a4d;font-weight:600;text-transform:uppercase;letter-spacing:.5px">Вы сэкономите на налогах</div>
-            <div id="saveRub" style="font-size:40px;font-weight:800;color:#0f7a4d;letter-spacing:-1.5px;line-height:1.05;margin:6px 0;white-space:nowrap">—</div>
-            <div id="saveDetail" style="font-size:12.5px;color:#0f7a4d;line-height:1.4"></div>
-          </div>
-          <div id="saveAlt" style="display:none;background:linear-gradient(135deg,#001644,#121d43);border-radius:14px;padding:16px 18px;color:#c8d4f5;font-size:13px;margin-bottom:16px;text-align:center;line-height:1.45">Для этой категории основная выгода — в скорости и «белых» документах для маркетплейсов.</div>
-
-          <div style="display:flex;gap:10px;margin-bottom:16px">
-            <div style="flex:1;background:#f1f4f9;border-radius:12px;padding:12px 10px;text-align:center">
-              <div style="font-size:18px;font-weight:800;color:#0253f6">до 42</div>
-              <div style="font-size:11.5px;color:#57647f;margin-top:2px;line-height:1.3">дней до вашего склада</div>
-            </div>
-            <div style="flex:1;background:#f1f4f9;border-radius:12px;padding:12px 10px;text-align:center">
-              <div style="font-size:18px;font-weight:800;color:#0253f6">100% белые</div>
-              <div style="font-size:11.5px;color:#57647f;margin-top:2px;line-height:1.3">ДТ · инвойс · УПД</div>
-            </div>
-          </div>
-
-          <div id="resNote" style="display:none;font-size:11.5px;color:#57647f;background:#f1f4f9;padding:11px 14px;border-radius:10px;margin-bottom:16px;line-height:1.4"></div>
-
-          <div style="border-top:1px dashed #d1dae8;padding-top:18px">
-            <h3 style="font-size:17px;color:#001644;margin:0 0 14px;font-weight:700">Получить точный расчёт и КП</h3>
-            <label style="display:block;margin-bottom:14px"><input id="lname" class="cfu-input" placeholder="Ваше имя" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none"></label>
-            <label style="display:block;margin-bottom:14px"><input id="lphone" class="cfu-input" type="tel" inputmode="tel" placeholder="Телефон" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none"></label>
-            <label style="display:block;margin-bottom:14px"><input id="lemail" class="cfu-input" type="email" inputmode="email" placeholder="E-mail (необязательно)" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none"></label>
-            <div id="leadErr" style="display:none;font-size:12px;color:#c0392b;margin-bottom:10px">Укажите имя и телефон.</div>
-            <button class="cfu-btn" id="btnLead" style="width:100%;padding:16px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer">Получить коммерческое предложение</button>
-          </div>
-
-          <details class="cfu-how" style="margin-top:14px;background:#f1f4f9;border-radius:10px;padding:0 14px">
-            <summary style="cursor:pointer;font-size:13px;font-weight:600;color:#001644;padding:12px 0">Что входит в услугу</summary>
-            <ul style="padding:0 0 14px 18px;font-size:12.5px;color:#57647f;margin:0">
-              <li style="margin-bottom:5px">Забор у поставщика и обработка на складе в Китае</li>
-              <li style="margin-bottom:5px">Доставка до СВХ в России и таможенное оформление через агента УЭО</li>
-              <li style="margin-bottom:5px">Пошлина и НДС по заниженной стоимости ИТС</li>
-              <li style="margin-bottom:5px">Страхование и доставка до вашего склада</li>
-              <li>Полный пакет документов: ДТ, инвойсы, УПД</li>
-            </ul>
-          </details>
+        <div style="text-align:center;margin-bottom:16px">
+          <div style="font-size:13px;color:#57647f;font-weight:600">Стоимость услуги «под ключ» до Москвы</div>
+          <div id="price" style="font-size:42px;font-weight:800;color:#001644;letter-spacing:-1.5px;margin:6px 0 2px">— ₽</div>
+          <div id="perkg" style="font-size:13px;color:#57647f"></div>
         </div>
 
-        <div id="okMsg" style="display:none;text-align:center;padding:24px 8px">
-          <div style="width:54px;height:54px;border-radius:50%;background:#e9f9f1;color:#1faa6b;font-size:28px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">✓</div>
-          <h3 style="color:#001644;font-size:18px;margin:0 0 6px;font-weight:700">Заявка принята!</h3>
-          <p style="color:#57647f;font-size:13.5px;line-height:1.45;margin:0">Менеджер свяжется с вами и пришлёт точный расчёт.</p>
+        <div id="saveBig" style="display:none;background:linear-gradient(135deg,#e9f9f1,#dff5ea);border:1px solid #b7e6cd;border-radius:16px;padding:20px;text-align:center;margin-bottom:16px">
+          <div style="font-size:12px;color:#0f7a4d;font-weight:600;text-transform:uppercase;letter-spacing:.5px">Вы сэкономите на налогах</div>
+          <div id="saveRub" style="font-size:40px;font-weight:800;color:#0f7a4d;letter-spacing:-1.5px;line-height:1.05;margin:6px 0;white-space:nowrap">—</div>
+          <div id="saveDetail" style="font-size:12.5px;color:#0f7a4d;line-height:1.4"></div>
         </div>
+        <div id="saveAlt" style="display:none;background:linear-gradient(135deg,#001644,#121d43);border-radius:14px;padding:16px 18px;color:#c8d4f5;font-size:13px;margin-bottom:16px;text-align:center;line-height:1.45">Для этой категории основная выгода — в скорости и «белых» документах для маркетплейсов.</div>
+
+        <div style="display:flex;gap:10px;margin-bottom:16px">
+          <div style="flex:1;background:#f1f4f9;border-radius:12px;padding:12px 10px;text-align:center">
+            <div style="font-size:18px;font-weight:800;color:#0253f6">до 42</div>
+            <div style="font-size:11.5px;color:#57647f;margin-top:2px;line-height:1.3">дней до вашего склада</div>
+          </div>
+          <div style="flex:1;background:#f1f4f9;border-radius:12px;padding:12px 10px;text-align:center">
+            <div style="font-size:18px;font-weight:800;color:#0253f6">100% белые</div>
+            <div style="font-size:11.5px;color:#57647f;margin-top:2px;line-height:1.3">ДТ · инвойс · УПД</div>
+          </div>
+        </div>
+
+        <div id="resNote" style="display:none;font-size:11.5px;color:#57647f;background:#f1f4f9;padding:11px 14px;border-radius:10px;margin-bottom:16px;line-height:1.4"></div>
+
+        <!-- CTA → нативная форма Tilda под виджетом -->
+        <div style="border-top:1px dashed #d1dae8;padding-top:18px;text-align:center">
+          <div style="font-size:15px;font-weight:700;color:#001644;margin-bottom:4px">Прислать точный расчёт и КП?</div>
+          <div style="font-size:12.5px;color:#57647f;margin-bottom:14px;line-height:1.45">Оставьте контакты — менеджер пришлёт детальное предложение по вашей партии в течение рабочего дня.</div>
+          <button class="cfu-btn" id="btnLead" style="width:100%;padding:16px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer">Оставить заявку →</button>
+          <div id="standaloneNote" style="display:none;font-size:11px;color:#9aa3b2;margin-top:8px">Форма заявки появится под калькулятором на сайте.</div>
+        </div>
+
+        <details class="cfu-how" style="margin-top:14px;background:#f1f4f9;border-radius:10px;padding:0 14px">
+          <summary style="cursor:pointer;font-size:13px;font-weight:600;color:#001644;padding:12px 0">Что входит в услугу</summary>
+          <ul style="padding:0 0 14px 18px;font-size:12.5px;color:#57647f;margin:0">
+            <li style="margin-bottom:5px">Забор у поставщика и обработка на складе в Китае</li>
+            <li style="margin-bottom:5px">Доставка до СВХ в России и таможенное оформление через агента УЭО</li>
+            <li style="margin-bottom:5px">Пошлина и НДС по заниженной стоимости ИТС</li>
+            <li style="margin-bottom:5px">Страхование и доставка до вашего склада</li>
+            <li>Полный пакет документов: ДТ, инвойсы, УПД</li>
+          </ul>
+        </details>
       </div>
 
     </div>
@@ -166,13 +157,6 @@
 </div>
 
 <script>
-/* ============================================================================
-   КОНФИГ ИНТЕГРАЦИИ — заполнить на проде
-   ========================================================================== */
-// Куда отправлять заявку. Оставьте "" — заявка только уйдёт в родительское окно
-// через postMessage (для захвата на стороне Tilda). Можно указать URL прокси/вебхука.
-const LEAD_ENDPOINT = "";
-
 /* ============================================================================
    ДВИЖОК РАСЧЁТА — проверен по листу «Реестр» (совпадает до 6 знаков). См. README.md
    ========================================================================== */
@@ -224,17 +208,16 @@ function calc({catKey,L,M,value,cur,city,volProvided}){
 /* ---------- UI ---------- */
 const $=id=>document.getElementById(id);
 const fmt=n=>Math.round(n).toLocaleString('ru-RU');
-let step=1, lastResult=null;
+const EMBEDDED = window.parent!==window;
+let step=1, lastResult=null, lastPayload=null;
 
-// наполнить категории
 PRESETS.forEach(p=>{const o=document.createElement('option');o.value=p.k;o.textContent=p.name;$('cat').appendChild(o);});
 
 function renderDots(){
   const wrap=$('cfuDots'); wrap.innerHTML='';
   for(let d=1;d<=4;d++){
     const cell=document.createElement('div');
-    cell.style.cssText='flex:1;padding:9px 0;cursor:pointer';
-    cell.title='Шаг '+d+' из 4';
+    cell.style.cssText='flex:1;padding:9px 0;cursor:pointer'; cell.title='Шаг '+d+' из 4';
     const bar=document.createElement('div');
     bar.style.cssText='height:4px;border-radius:4px;transition:background .3s;background:'+(d<=step?'#0253f6':'#d1dae8');
     cell.appendChild(bar);
@@ -246,31 +229,22 @@ function renderDots(){
 function go(n){
   step=n;
   for(let i=1;i<=4;i++) $('step'+i).classList.toggle('on',i===n);
-  renderDots();
-  postSize();
-  if(window.parent!==window) window.scrollTo({top:0});
+  renderDots(); postSize();
 }
 function postSize(){
-  const h=document.body.scrollHeight;
-  if(window.parent!==window){ try{ parent.postMessage({type:'cfu-resize',height:h},'*'); }catch(e){} }
+  if(EMBEDDED){ try{ parent.postMessage({type:'cfu-resize',height:document.body.scrollHeight},'*'); }catch(e){} }
 }
 
-// навигация по кнопкам
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(+b.dataset.go));
-$('kg').addEventListener('input',()=>{
-  const v=parseFloat($('kg').value)||0;
-  $('minWarn').style.display=(v>0&&v<MIN_KG)?'block':'none'; postSize();
-});
+$('kg').addEventListener('input',()=>{ const v=parseFloat($('kg').value)||0; $('minWarn').style.display=(v>0&&v<MIN_KG)?'block':'none'; postSize(); });
 $('city').addEventListener('change',()=>{ $('cityNote').style.display=$('city').value==='other'?'block':'none'; postSize(); });
 
 $('btnCalc').onclick=()=>{
   const L=parseFloat($('kg').value)||0;
   if(L<=0){ go(2); $('kg').focus(); return; }
-  const r=calc({catKey:$('cat').value, L,
-    M:parseFloat($('m3').value)||0, value:parseFloat($('val').value)||0,
-    cur:$('cur').value, city:$('city').value, volProvided:!!$('m3').value});
+  const r=calc({catKey:$('cat').value, L, M:parseFloat($('m3').value)||0,
+    value:parseFloat($('val').value)||0, cur:$('cur').value, city:$('city').value, volProvided:!!$('m3').value});
   lastResult=r;
-  $('resultBlock').style.display='block'; $('okMsg').style.display='none';
   $('price').textContent=fmt(r.serviceRUB)+' ₽';
   $('perkg').textContent='≈ '+fmt(r.perKgRUB)+' ₽/кг · без стоимости самого товара';
   const save=r.taxInvRUB-r.taxBadisRUB;
@@ -278,42 +252,35 @@ $('btnCalc').onclick=()=>{
     $('saveBig').style.display='block'; $('saveAlt').style.display='none';
     $('saveRub').textContent='≈ '+fmt(save)+' ₽';
     $('saveDetail').textContent=fmt(r.taxBadisRUB)+' ₽ по белой схеме вместо '+fmt(r.taxInvRUB)+' ₽ при обычном импорте';
-  } else {
-    $('saveBig').style.display='none'; $('saveAlt').style.display='block';
-  }
+  } else { $('saveBig').style.display='none'; $('saveAlt').style.display='block'; }
   const notes=[];
   if(r.volEstimated) notes.push('объём оценён по плотности');
   if(r.otherCity) notes.push('доставку до вашего города посчитаем в КП');
   if(r.belowMin) notes.push('партия меньше '+MIN_KG+' кг — обсудим с менеджером');
   if(notes.length){ let t=notes.join(' · '); $('resNote').textContent=t.charAt(0).toUpperCase()+t.slice(1)+'.'; $('resNote').style.display='block'; }
   else $('resNote').style.display='none';
+
+  // данные расчёта → родительской странице (для скрытых полей формы Tilda)
+  const cat=PRESETS.find(p=>p.k===$('cat').value);
+  lastPayload={
+    calc_category: cat?cat.name:'', calc_weight:$('kg').value, calc_volume:$('m3').value||'(по плотности)',
+    calc_city: $('city').value==='other'?'другой город':'Москва',
+    calc_value:($('val').value||'')+' '+$('cur').value,
+    calc_estimate: fmt(r.serviceRUB)+' ₽', calc_savings: save>0?fmt(save)+' ₽':'—'
+  };
+  if(EMBEDDED){ try{ parent.postMessage({type:'cfu-calc',payload:lastPayload},'*'); }catch(e){} }
   go(4);
 };
 
+// «Оставить заявку» → просим родителя проскроллить к форме Tilda (и повторно шлём данные)
 $('btnLead').onclick=()=>{
-  const name=$('lname').value.trim(), phone=$('lphone').value.trim(), email=$('lemail').value.trim();
-  if(!name || !phone){ $('leadErr').style.display='block'; postSize(); return; }
-  $('leadErr').style.display='none';
-  const cat=PRESETS.find(p=>p.k===$('cat').value);
-  const payload={
-    name, phone, email,
-    category: cat?cat.name:'', weight_kg:$('kg').value, volume_m3:$('m3').value,
-    city: $('city').value==='other'?'другой город':'Москва',
-    goods_value:$('val').value, currency:$('cur').value,
-    estimate_rub: lastResult?Math.round(lastResult.serviceRUB):null,
-    savings_rub: lastResult?Math.round(lastResult.taxInvRUB-lastResult.taxBadisRUB):null,
-    page: location.href
-  };
-  // 1) отдаём заявку в родительское окно (Tilda сможет поймать и переслать)
-  if(window.parent!==window){ try{ parent.postMessage({type:'cfu-lead',payload},'*'); }catch(e){} }
-  // 2) опционально — прямая отправка на ваш эндпоинт/вебхук
-  if(LEAD_ENDPOINT){ fetch(LEAD_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(()=>{}); }
-  $('resultBlock').style.display='none'; $('okMsg').style.display='block'; postSize();
+  if(EMBEDDED){ try{ parent.postMessage({type:'cfu-lead-go',payload:lastPayload},'*'); }catch(e){} }
+  else { $('standaloneNote').style.display='block'; }
 };
 
-document.querySelectorAll('.cfu-how').forEach(d=>d.addEventListener('toggle',postSize));
 window.addEventListener('load',()=>{ renderDots(); postSize(); });
 window.addEventListener('resize',postSize);
+document.querySelectorAll('.cfu-how').forEach(d=>d.addEventListener('toggle',postSize));
 renderDots();
 </script>
 </body>
