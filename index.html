@@ -35,9 +35,9 @@
 
   <div style="background:#fff;border-radius:20px;box-shadow:0 18px 50px rgba(0,22,68,.12);overflow:hidden">
 
-    <div style="background:linear-gradient(135deg,#001644 0%,#121d43 100%);color:#fff;padding:24px">
-      <div style="font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:#9fb4ff;font-weight:600">Расчёт за 1 минуту</div>
-      <div style="font-size:22px;font-weight:700;margin-top:6px;line-height:1.25;color:#fff">Сколько вы сэкономите, работая с нами?</div>
+    <div style="padding:24px 24px 2px">
+      <div style="font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:#0253f6;font-weight:600">Расчёт за 1 минуту</div>
+      <div style="font-size:22px;font-weight:700;margin-top:6px;line-height:1.25;color:#001644">Сколько вы сэкономите, работая с нами?</div>
     </div>
 
     <div id="cfuDots" style="display:flex;gap:6px;padding:16px 24px 0"></div>
@@ -50,7 +50,7 @@
         <label style="display:block;margin-bottom:14px">
           <select id="cat" class="cfu-input" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none"></select>
         </label>
-        <button class="cfu-btn" data-go="2" style="width:100%;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">Далее →</button>
+        <button class="cfu-btn" data-go="2" style="width:100%;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">Далее</button>
       </div>
 
       <!-- ШАГ 2 -->
@@ -78,7 +78,7 @@
         <div id="cityNote" style="display:none;font-size:11.5px;color:#57647f;margin-top:5px">Доставку до вашего города рассчитаем в КП.</div>
         <div style="display:flex;gap:10px;margin-top:14px">
           <button class="cfu-btn cfu-ghost" data-go="1" style="flex:0 0 46px;padding:15px 0;border:none;border-radius:12px;background:#eef2fb;color:#001644;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">←</button>
-          <button class="cfu-btn" data-go="3" style="flex:1;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">Далее →</button>
+          <button class="cfu-btn" data-go="3" style="flex:1;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">Далее</button>
         </div>
       </div>
 
@@ -88,7 +88,7 @@
         <div style="display:flex;gap:10px">
           <label style="display:block;flex:2">
             <span style="font-size:13px;font-weight:600;color:#001644;margin-bottom:6px;display:block">Стоимость партии (инвойс)</span>
-            <input id="val" class="cfu-input" type="number" inputmode="numeric" placeholder="напр. 300000" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
+            <input id="val" class="cfu-input" type="text" inputmode="numeric" placeholder="напр. 500 000" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
           </label>
           <label style="display:block;flex:1">
             <span style="font-size:13px;font-weight:600;color:#001644;margin-bottom:6px;display:block">Валюта</span>
@@ -99,7 +99,7 @@
         </div>
         <div style="display:flex;gap:10px;margin-top:14px">
           <button class="cfu-btn cfu-ghost" data-go="2" style="flex:0 0 46px;padding:15px 0;border:none;border-radius:12px;background:#eef2fb;color:#001644;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">←</button>
-          <button class="cfu-btn" id="btnCalc" style="flex:1;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">Рассчитать →</button>
+          <button class="cfu-btn" id="btnCalc" style="flex:1;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">Рассчитать</button>
         </div>
       </div>
 
@@ -135,7 +135,7 @@
         <div style="border-top:1px dashed #d1dae8;padding-top:18px;text-align:center">
           <div style="font-size:15px;font-weight:700;color:#001644;margin-bottom:4px">Прислать точный расчёт и КП?</div>
           <div style="font-size:12.5px;color:#57647f;margin-bottom:14px;line-height:1.45">Оставьте контакты — менеджер пришлёт детальное предложение по вашей партии в течение рабочего дня.</div>
-          <button class="cfu-btn" id="btnLead" style="width:100%;padding:16px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer">Оставить заявку →</button>
+          <button class="cfu-btn" id="btnLead" style="width:100%;padding:16px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer">Оставить заявку</button>
           <div id="standaloneNote" style="display:none;font-size:11px;color:#9aa3b2;margin-top:8px">Форма заявки появится под калькулятором на сайте.</div>
         </div>
 
@@ -237,13 +237,14 @@ function postSize(){
 
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(+b.dataset.go));
 $('kg').addEventListener('input',()=>{ const v=parseFloat($('kg').value)||0; $('minWarn').style.display=(v>0&&v<MIN_KG)?'block':'none'; postSize(); });
+$('val').addEventListener('input',function(){ this.value = this.value.replace(/\D/g,'').replace(/\B(?=(\d{3})+(?!\d))/g,' '); });
 $('city').addEventListener('change',()=>{ $('cityNote').style.display=$('city').value==='other'?'block':'none'; postSize(); });
 
 $('btnCalc').onclick=()=>{
   const L=parseFloat($('kg').value)||0;
   if(L<=0){ go(2); $('kg').focus(); return; }
   const r=calc({catKey:$('cat').value, L, M:parseFloat($('m3').value)||0,
-    value:parseFloat($('val').value)||0, cur:$('cur').value, city:$('city').value, volProvided:!!$('m3').value});
+    value:parseFloat(($('val').value||'').replace(/\s/g,''))||0, cur:$('cur').value, city:$('city').value, volProvided:!!$('m3').value});
   lastResult=r;
   $('price').textContent=fmt(r.serviceRUB)+' ₽';
   $('perkg').textContent='≈ '+fmt(r.perKgRUB)+' ₽/кг · без стоимости самого товара';
