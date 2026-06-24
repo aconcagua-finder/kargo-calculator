@@ -26,80 +26,70 @@
 </style>
 </head>
 <body>
-<div style="max-width:600px;margin:0 auto;padding:28px 16px 48px">
+<div style="max-width:680px;margin:0 auto;padding:6px 16px 16px">
 
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
-    <div style="width:44px;height:44px;border-radius:11px;background:linear-gradient(135deg,#0253f6,#001644);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:13.5px;letter-spacing:.5px;flex:0 0 auto">ЦФУ</div>
-    <div style="font-size:15px;font-weight:700;color:#001644;line-height:1.2">Белый импорт из Китая по цене карго</div>
-  </div>
+  <div style="background:#fff;border-radius:22px;box-shadow:0 18px 50px rgba(0,22,68,.12);overflow:hidden">
 
-  <div style="background:#fff;border-radius:20px;box-shadow:0 18px 50px rgba(0,22,68,.12);overflow:hidden">
+    <div id="cfuDots" style="display:flex;gap:6px;padding:26px 28px 0"></div>
 
-    <div style="padding:24px 24px 2px">
-      <div style="font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:#0253f6;font-weight:600">Расчёт за 1 минуту</div>
-      <div style="font-size:22px;font-weight:700;margin-top:6px;line-height:1.25;color:#001644">Сколько вы сэкономите, работая с нами?</div>
-    </div>
-
-    <div id="cfuDots" style="display:flex;gap:6px;padding:16px 24px 0"></div>
-
-    <div style="padding:22px 24px 26px">
+    <div style="padding:24px 28px 30px">
 
       <!-- ШАГ 1 -->
       <div class="cfu-step on" id="step1">
-        <div style="font-size:18px;font-weight:700;color:#001644;margin-bottom:14px">Что вы везёте?</div>
+        <div style="font-size:20px;font-weight:800;color:#001644;margin-bottom:16px">Что вы везёте?</div>
         <label style="display:block;margin-bottom:14px">
-          <select id="cat" class="cfu-input" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none"></select>
+          <select id="cat" class="cfu-input" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:16px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none"></select>
         </label>
-        <button class="cfu-btn" data-go="2" style="width:100%;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">Далее</button>
+        <button class="cfu-btn" data-go="2" style="width:100%;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer">Далее</button>
       </div>
 
       <!-- ШАГ 2 -->
       <div class="cfu-step" id="step2">
-        <div style="font-size:18px;font-weight:700;color:#001644;margin-bottom:14px">Параметры партии</div>
+        <div style="font-size:20px;font-weight:800;color:#001644;margin-bottom:16px">Параметры партии</div>
         <div style="display:flex;gap:10px">
           <label style="display:block;flex:1">
             <span style="font-size:13px;font-weight:600;color:#001644;margin-bottom:6px;display:block">Вес, кг</span>
-            <input id="kg" class="cfu-input" type="number" inputmode="numeric" placeholder="напр. 800" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
+            <input id="kg" class="cfu-input" type="number" inputmode="numeric" placeholder="напр. 800" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:16px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
           </label>
           <label style="display:block;flex:1">
             <span style="font-size:13px;font-weight:600;color:#001644;margin-bottom:6px;display:block">Объём, м³</span>
-            <input id="m3" class="cfu-input" type="number" inputmode="decimal" placeholder="напр. 4.5" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
+            <input id="m3" class="cfu-input" type="number" inputmode="decimal" placeholder="напр. 4.5" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:16px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
           </label>
         </div>
         <div style="font-size:11.5px;color:#57647f;margin-top:5px">Объём можно не указывать — оценим по плотности.</div>
         <div id="minWarn" style="display:none;background:#fff5e6;border:1px solid #ffd98a;color:#8a5a00;font-size:12.5px;padding:9px 12px;border-radius:10px;margin-top:8px;line-height:1.4">⚠ Минимум для белого ввоза — <b>300 кг</b>. Расчёт ориентировочный.</div>
         <label style="display:block;margin:14px 0 0">
           <span style="font-size:13px;font-weight:600;color:#001644;margin-bottom:6px;display:block">Город доставки</span>
-          <select id="city" class="cfu-input" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
+          <select id="city" class="cfu-input" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:16px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
             <option value="Москва">Москва</option>
             <option value="other">Другой город</option>
           </select>
         </label>
         <div id="cityNote" style="display:none;font-size:11.5px;color:#57647f;margin-top:5px">Доставку до вашего города рассчитаем в КП.</div>
         <div style="display:flex;gap:10px;margin-top:14px">
-          <button class="cfu-btn cfu-ghost" data-go="1" style="flex:0 0 46px;padding:15px 0;border:none;border-radius:12px;background:#eef2fb;color:#001644;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">←</button>
-          <button class="cfu-btn" data-go="3" style="flex:1;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">Далее</button>
+          <button class="cfu-btn cfu-ghost" data-go="1" style="flex:0 0 46px;padding:15px 0;border:none;border-radius:12px;background:#eef2fb;color:#001644;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer">←</button>
+          <button class="cfu-btn" data-go="3" style="flex:1;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer">Далее</button>
         </div>
       </div>
 
       <!-- ШАГ 3 -->
       <div class="cfu-step" id="step3">
-        <div style="font-size:18px;font-weight:700;color:#001644;margin-bottom:14px">Стоимость товара</div>
+        <div style="font-size:20px;font-weight:800;color:#001644;margin-bottom:16px">Стоимость товара</div>
         <div style="display:flex;gap:10px">
           <label style="display:block;flex:2">
             <span style="font-size:13px;font-weight:600;color:#001644;margin-bottom:6px;display:block">Стоимость партии (инвойс)</span>
-            <input id="val" class="cfu-input" type="text" inputmode="numeric" placeholder="напр. 500 000" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
+            <input id="val" class="cfu-input" type="text" inputmode="numeric" placeholder="напр. 500 000" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:16px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
           </label>
           <label style="display:block;flex:1">
             <span style="font-size:13px;font-weight:600;color:#001644;margin-bottom:6px;display:block">Валюта</span>
-            <select id="cur" class="cfu-input" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:15px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
+            <select id="cur" class="cfu-input" style="width:100%;padding:13px 14px;border:1.5px solid #d1dae8;border-radius:12px;font-size:16px;font-family:inherit;color:#121d43;background:#fbfcfe;outline:none">
               <option value="RUB">₽</option><option value="CNY">¥</option><option value="USD">$</option>
             </select>
           </label>
         </div>
         <div style="display:flex;gap:10px;margin-top:14px">
-          <button class="cfu-btn cfu-ghost" data-go="2" style="flex:0 0 46px;padding:15px 0;border:none;border-radius:12px;background:#eef2fb;color:#001644;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">←</button>
-          <button class="cfu-btn" id="btnCalc" style="flex:1;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:15.5px;font-weight:700;font-family:inherit;cursor:pointer">Рассчитать</button>
+          <button class="cfu-btn cfu-ghost" data-go="2" style="flex:0 0 46px;padding:15px 0;border:none;border-radius:12px;background:#eef2fb;color:#001644;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer">←</button>
+          <button class="cfu-btn" id="btnCalc" style="flex:1;padding:15px;border:none;border-radius:12px;background:#0253f6;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer">Рассчитать</button>
         </div>
       </div>
 
@@ -107,7 +97,7 @@
       <div class="cfu-step" id="step4">
         <div style="text-align:center;margin-bottom:16px">
           <div style="font-size:13px;color:#57647f;font-weight:600">Стоимость услуги «под ключ» до Москвы</div>
-          <div id="price" style="font-size:42px;font-weight:800;color:#001644;letter-spacing:-1.5px;margin:6px 0 2px">— ₽</div>
+          <div id="price" style="font-size:48px;font-weight:800;color:#001644;letter-spacing:-1.5px;margin:6px 0 2px">— ₽</div>
           <div id="perkg" style="font-size:13px;color:#57647f"></div>
         </div>
 
